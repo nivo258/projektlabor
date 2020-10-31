@@ -1,0 +1,6 @@
+CREATE TABLE Users (
+    ID int AUTO_INCREMENT PRIMARY KEY,
+    Username varchar(8),
+    Password varchar(32),
+    Admin bit
+)
