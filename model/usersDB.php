@@ -20,13 +20,26 @@ class usersDB extends db
         return $result;
     }
 
-    function register($username,$pw,$admin) {
+    function register($username,$pw,$userlvl=0) {
+
+        $check = $this->select("SELECT * FROM `users` WHERE Username like '".$username."';");
+
+        if (count($check)==0) {
+            $this->select("INSERT INTO `users`(`Username`, `Password`, `Userlvl`) VALUES ('" . $username . "' , '" . $pw . "' , '" . $userlvl . "');");
+            $result = 1;
+        }
+        else {
+            $result = 0;
+        }
+        return $result;
 
     }
 
 }
 
 $asd = new usersDB();
+
+$asd->register('Teszt4','Teszt',1);
 
 $res = $asd->login('admin','admin');
 
