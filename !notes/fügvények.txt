@@ -1,4 +1,5 @@
 ---------
+
 model > usersdb > login(felhazsnálónév,jelszó)
 
 Visszatér a bejelentkezési adatok eredményével, ha nem talált akkor a 'code' értéke 404, ha talál akkor 200.
@@ -10,8 +11,16 @@ $result[0]['Password'] - felhasználó jelszava
 $result[0]['Userlvl'] - felhasználó szintje (0 - hallgató , 1 - oktató , 2 - admin)
 
 ---------
+
 model > usersdb > register(felhazsnálónév,jelszó,felhasználó szintje)
 
 A függvény 1-el tér vissza ha a regisztráció sikeres volt, 0-val ha nem.
 
 ---------
+
+model > usersdb > edit_user(ID)
+
+Törli a Users táblából az ID-val megegyező felhasználót
+
+---------
+

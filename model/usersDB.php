@@ -34,12 +34,19 @@ class usersDB extends db
         return $result;
 
     }
+    function delete_user($id) {
+        $this->select("DELETE FROM `users` WHERE `ID` = ".$id.";");
+    }
+    function edit_user() {
+
+    }
 
 }
 
 $asd = new usersDB();
 
 $asd->register('Teszt4','Teszt',1);
+
 
 $res = $asd->login('admin','admin');
 
