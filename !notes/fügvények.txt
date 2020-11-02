@@ -1,0 +1,12 @@
+---------
+model > logindb > login(felhazsnálónév,jelszó)
+
+Visszatér a bejelentkezési adatok eredményével, ha nem talált akkor a 'code' értéke 404, ha talál akkor 200.
+Adatok:
+$result[0]['code'] - visszatérési kód
+$result[0]['ID'] - felhasználó ID-ja
+$result[0]['Username'] - felhasználónév
+$result[0]['Password'] - felhasználó jelszava
+$result[0]['Admin'] - felhasználó admin-e? (0 - nem , 1 - igen)
+
+---------
