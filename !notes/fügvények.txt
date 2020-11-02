@@ -1,5 +1,5 @@
 ---------
-model > logindb > login(felhazsnálónév,jelszó)
+model > usersdb > login(felhazsnálónév,jelszó)
 
 Visszatér a bejelentkezési adatok eredményével, ha nem talált akkor a 'code' értéke 404, ha talál akkor 200.
 Adatok:

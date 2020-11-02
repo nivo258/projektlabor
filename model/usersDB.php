@@ -1,7 +1,7 @@
 <?php
 require "db.php";
 
-class loginDB extends db
+class usersDB extends db
 {
 
     function login($username,$pw) {
@@ -22,7 +22,7 @@ class loginDB extends db
 
 }
 
-$asd = new loginDB();
+$asd = new usersDB();
 
 $res = $asd->login('admin','admin');
 
