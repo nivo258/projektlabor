@@ -7,11 +7,20 @@ class createDB extends db
 
 
         $this->select("CREATE TABLE IF NOT EXISTS Users (
-    	ID int AUTO_INCREMENT PRIMARY KEY,
-    	Username varchar(8),
-    	Password varchar(32),
-    	Userlvl int
+    	    ID int AUTO_INCREMENT PRIMARY KEY,
+    	    Username varchar(8),
+    	    Password varchar(32),
+    	    Userlvl int
         )");
+
+        $this->select("CREATE TABLE IF NOT EXISTS Log (
+            ID int AUTO_INCREMENT PRIMARY KEY,
+    	    Date DATE,
+    	    Log VARCHAR(65535)
+        )");
+
+
+
         $asd = count($this->select("SELECT Username  FROM `users` WHERE Username='admin';"));
 
         if ($asd == 0) {
