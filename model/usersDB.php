@@ -37,7 +37,41 @@ class usersDB extends db
     function delete_user($id) {
         $this->select("DELETE FROM `users` WHERE `ID` = ".$id.";");
     }
-    function edit_user() {
+    function edit_user($id,$username=null,$pw=null,$userlvl=null) {
+
+        $code = "UPDATE `users` SET";
+
+        if ($username != null and ($pw != null or $userlvl != null)) {
+            $code = $code."`Username`='".$username."',";
+
+            if ($pw != null and $userlvl != null) {
+                $code = $code."`Password`='".$pw."',";
+            }
+            elseif ($pw != null) {
+                $code = $code."`Password`='".$pw."'";
+            }
+            if ($userlvl != null){
+                $code = $code."`Userlvl`=".$userlvl;
+            }
+        }
+        elseif ($username != null) {
+            $code = $code."`Username`='".$username."'";
+        }
+        if ($pw != null and $userlvl != null) {
+            $code = $code."`Password`='".$pw."',";
+            $code = $code."`Userlvl`=".$userlvl;
+        }
+        elseif ($pw != null) {
+            $code = $code."`Password`='".$pw."'";
+        }
+        else {
+            $code = $code."`Userlvl`=".$userlvl;
+        }
+
+        $code = $code." WHERE ID=".$id.";";
+        $this->select($code);
+
+        echo $code;
 
     }
 
@@ -46,6 +80,8 @@ class usersDB extends db
 $asd = new usersDB();
 
 $asd->register('Teszt4','Teszt',1);
+
+$asd->edit_user(1,null,null,1);
 
 
 $res = $asd->login('admin','admin');
