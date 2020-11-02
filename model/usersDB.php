@@ -20,6 +20,10 @@ class usersDB extends db
         return $result;
     }
 
+    function register($username,$pw,$admin) {
+
+    }
+
 }
 
 $asd = new usersDB();

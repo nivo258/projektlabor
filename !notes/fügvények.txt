@@ -7,6 +7,17 @@ $result[0]['code'] - visszatérési kód
 $result[0]['ID'] - felhasználó ID-ja
 $result[0]['Username'] - felhasználónév
 $result[0]['Password'] - felhasználó jelszava
-$result[0]['Admin'] - felhasználó admin-e? (0 - nem , 1 - igen)
+$result[0]['Userlvl'] - felhasználó szintje (0 - hallgató , 1 - oktató , 2 - admin)
+
+---------
+model > usersdb > register(felhazsnálónév,jelszó,admine)
+
+
+
+
+
+
+
+
 
 ---------

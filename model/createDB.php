@@ -10,12 +10,12 @@ class createDB extends db
     	ID int AUTO_INCREMENT PRIMARY KEY,
     	Username varchar(8),
     	Password varchar(32),
-    	Admin bit
+    	Userlvl int
         )");
         $asd = count($this->select("SELECT Username  FROM `users` WHERE Username='admin';"));
 
         if ($asd == 0) {
-            $this->select("INSERT INTO `users`( `Username`, `Password`, `Admin`) VALUES ('admin','admin',1);");
+            $this->select("INSERT INTO `users`( `Username`, `Password`, `Userlvl`) VALUES ('admin','admin',2);");
         }
     }
 
