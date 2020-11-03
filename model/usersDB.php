@@ -20,6 +20,12 @@ class usersDB extends db
         return $result;
     }
 
+    function listall() {
+        $result = $this->select("SELECT * FROM `users` ;");
+
+        return $result;
+    }
+
     function register($username,$pw,$userlvl=0) {
 
         $check = $this->select("SELECT * FROM `users` WHERE Username like '".$username."';");
