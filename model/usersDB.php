@@ -10,9 +10,11 @@ class usersDB extends db
 
         if (count($result)==0) {
             $result[0]['code']=404;
+            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikertelen bejelentkezés (".$username.")');");
         }
         else {
             $result[0]['code']=200;
+            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikeres bejelentkezés (".$username.")');");
         }
 
 
@@ -32,9 +34,11 @@ class usersDB extends db
 
         if (count($check)==0) {
             $this->select("INSERT INTO `users`(`Username`, `Password`, `Userlvl`) VALUES ('" . $username . "' , '" . $pw . "' , '" . $userlvl . "');");
+            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikeres felhasználó regisztrálás (".$username.")');");
             $result = 1;
         }
         else {
+            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikertelen felhasználó regisztrálás (".$username.")');");
             $result = 0;
         }
         return $result;
@@ -42,8 +46,11 @@ class usersDB extends db
     }
     function delete_user($id) {
         $this->select("DELETE FROM `users` WHERE `ID` = ".$id.";");
+        $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Felhasználó törlésre került (ID: ".$id.")');");
     }
     function edit_user($id,$username=null,$pw=null,$userlvl=null) {
+
+        $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Felhasználó modosításra került (".$id." | ".$username." | ".$pw." | ".$userlvl.")');");
 
         $code = "UPDATE `users` SET";
 

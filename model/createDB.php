@@ -15,9 +15,11 @@ class createDB extends db
 
         $this->select("CREATE TABLE IF NOT EXISTS Log (
             ID int AUTO_INCREMENT PRIMARY KEY,
-    	    Date DATE,
+    	    Date DATETIME,
     	    Log VARCHAR(65535)
         )");
+
+
 
 
 
@@ -26,13 +28,19 @@ class createDB extends db
         if ($asd == 0) {
             $this->select("INSERT INTO `users`( `Username`, `Password`, `Userlvl`) VALUES ('admin','admin',2);");
         }
+
+
     }
 
 }
 
 $asd = new createDB;
 
-$asd->create();
+$return = $asd->create();
+
+echo $return;
+
+
 
 
 echo 'Adattáblák és admin felhasználó létrehozva vagy már léteznek!';

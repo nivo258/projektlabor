@@ -29,4 +29,14 @@ model > usersdb > edit_user(ID,felhasználónév,jelszó,felhasználó szintje)
 felhasználónév,jelszó,felhasználó szintje megadása nem kötelező, ha ezen adatok valamelyike nem változik null értéket adjunk meg, de ez alapértelmezett is
 
 ---------
+model > usersdb > listall()
+
+Visszatér az összes felhasználóval.
+
+$result[0]['ID'] - felhasználó ID-ja
+$result[0]['Username'] - felhasználónév
+$result[0]['Password'] - felhasználó jelszava
+$result[0]['Userlvl'] - felhasználó szintje (0 - hallgató , 1 - oktató , 2 - admin)
+
+---------
 
