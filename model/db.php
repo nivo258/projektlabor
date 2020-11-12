@@ -35,6 +35,10 @@ class db
         $this->stmt = null;
         return $result;
     }
+    function log($msg)
+    {
+        $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('" . date('Y-m-d h:i:sa') . "','". $msg."');");
+    }
 }
 
 
