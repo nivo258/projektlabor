@@ -13,6 +13,29 @@ class createDB extends db
     	    Userlvl int
         )");
 
+        $this->select("CREATE TABLE IF NOT EXISTS Mails (
+            ID int AUTO_INCREMENT PRIMARY KEY,
+    	    SenderID int,
+    	    TakerID int,
+    	    Subject VARCHAR(255),
+    	    Content VARCHAR(65535)
+        )");
+
+        $this->select("CREATE TABLE IF NOT EXISTS Files (
+            ID int AUTO_INCREMENT PRIMARY KEY,
+    	    Filename VARCHAR(255),
+    	    Link VARCHAR(255),
+    	    OwnerID int,
+    	    CategoryID int,
+    	    Public TINYINT(1)
+        )");
+
+        $this->select("CREATE TABLE IF NOT EXISTS Categorys (
+            ID int AUTO_INCREMENT PRIMARY KEY,
+    	    CatName VARCHAR(255),
+    	    Description VARCHAR(65535)
+        )");
+
         $this->select("CREATE TABLE IF NOT EXISTS Log (
             ID int AUTO_INCREMENT PRIMARY KEY,
     	    Date DATETIME,
