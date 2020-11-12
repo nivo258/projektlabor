@@ -1,4 +1,5 @@
 <?php
+require "db.php";
 
 
 class categorysDB extends db
