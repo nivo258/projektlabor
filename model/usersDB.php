@@ -10,11 +10,11 @@ class usersDB extends db
 
         if (count($result)==0) {
             $result[0]['code']=404;
-            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikertelen bejelentkezés (".$username.")');");
+            $this->log('Sikertelen bejelentkezés ('.$username.')');
         }
         else {
             $result[0]['code']=200;
-            $this->select("INSERT INTO `log`(`Date`, `Log`) VALUES ('".date('Y-m-d h:i:sa')."','Sikeres bejelentkezés (".$username.")');");
+            $this->log('Sikeres bejelentkezés ('.$username.')');
         }
 
 
