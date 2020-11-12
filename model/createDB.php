@@ -52,6 +52,12 @@ class createDB extends db
             $this->select("INSERT INTO `users`( `Username`, `Password`, `Userlvl`) VALUES ('admin','admin',2);");
         }
 
+        $asd = count($this->select("SELECT CatName  FROM `categorys` WHERE CatName='Default';"));
+
+        if ($asd == 0) {
+            $this->select("INSERT INTO `categorys`(`CatName`, `Description`) VALUES ('Default','Alapértelmezett kategória, nem törölhető!');");
+        }
+
 
     }
 
