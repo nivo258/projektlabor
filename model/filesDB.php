@@ -47,4 +47,4 @@ class filesDB extends db
 
 $asd = new filesDB();
 
-$asd->editfile(2,"kek");
+$asd->uploadfile("Almafa","teszt.hu/almafa",1,2,1);
