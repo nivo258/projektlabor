@@ -9,10 +9,29 @@ class filesDB extends db
         $this->log($filename." fájl feltöltésre került ".$ownerID."-es ID felhasználó által a ".$categoryID."-es kategóriába ( ".$link." )");
 
     }
-    function deletefile() {
-
+    function deletefile($ID) {
+        $this->select("DELETE FROM `files` WHERE `files`.`ID` = ".$ID.";");
+        $this->log($ID." fájl törölve lett");
     }
-    function editfile() {
+    function editfile($ID, $filename=null, $link=null, $ownerID=null, $categoryID=null, $public=null) {
+        $data = $this->select("SELECT * FROM `files` WHERE `ID` = ".$ID.";");
+        if ($filename == null) {
+            $filename = $data[0]['Filename'];
+        }
+        if ($link == null ) {
+            $link = $data[0]['Link'];
+        }
+        if ($ownerID == null) {
+            $ownerID = $data[0]['OwnerID'];
+        }
+        if ($categoryID == null) {
+            $categoryID = $data[0]['CategoryID'];
+        }
+        if ($public == null) {
+            $public = $data[0]['Public'];
+        }
+        $this->select("UPDATE `files` SET `Filename`='".$filename."',`Link`='".$link."',`OwnerID`=".$ownerID.",`CategoryID`=".$categoryID.",`Public`=".$public." WHERE `ID`=".$ID.";");
+        $this->log($ID."-es fájl modosításra került");
 
     }
     function listallfiles() {
@@ -28,4 +47,4 @@ class filesDB extends db
 
 $asd = new filesDB();
 
-$asd->uploadfile("Teszt","teszt.hu/asd/",1,1,1);
+$asd->editfile(2,"kek");
