@@ -17,6 +17,15 @@ class categorysDB extends db
             $this->log($ID."-es kategória törölve");
     }
     function editcategory($ID,$catName=null,$description=null) {
+        $data = $this->select("SELECT * FROM `categorys` WHERE `ID` = ".$ID.";");
+        if ($catName=null) {
+            $catName = $data[0]['CatName'];
+        }
+        if ($description==null){
+            $description = $data[0]['Description'];
+        }
+        $this->select("UPDATE `categorys` SET `CatName`='".$catName."',`Description`='".$description."' WHERE `ID`=".$ID.";");
+        $this->log($ID."-es kategória modosításra került");
 
     }
 
