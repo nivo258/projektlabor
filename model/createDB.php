@@ -41,6 +41,16 @@ class createDB extends db
     	    Date DATETIME,
     	    Log VARCHAR(65535)
         )");
+        $this->select("CREATE TABLE IF NOT EXISTS Shares (
+            OwnerID int,
+            SharedID int
+        )");
+        $this->select("CREATE TABLE IF NOT EXISTS Comments (
+            ID int AUTO_INCREMENT PRIMARY KEY,
+            FileID int,
+            CommenterID int,
+    	    Content VARCHAR(65535)
+        )");
 
 
 
