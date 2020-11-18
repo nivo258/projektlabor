@@ -42,7 +42,7 @@ class createDB extends db
     	    Log VARCHAR(65535)
         )");
         $this->select("CREATE TABLE IF NOT EXISTS Shares (
-            OwnerID int,
+            FileID int,
             SharedID int
         )");
         $this->select("CREATE TABLE IF NOT EXISTS Comments (
