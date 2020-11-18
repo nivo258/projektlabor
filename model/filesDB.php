@@ -43,7 +43,10 @@ class filesDB extends db
         return $result;
     }
 }
-
+/*/
+---
+Tesztek
+---
 
 $asd = new filesDB();
 

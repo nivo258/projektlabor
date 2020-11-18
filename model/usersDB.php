@@ -88,7 +88,10 @@ class usersDB extends db
     }
 
 }
-
+/*/
+---
+Tesztek
+---
 $asd = new usersDB();
 
 $asd->register('BWY8HW','Almafa12',1);
@@ -99,3 +102,4 @@ $asd->edit_user(2,null,null,2);
 $res = $asd->login('BWY8HW','Almafa12');
 
 echo $res[0]['code'];
+/*/
