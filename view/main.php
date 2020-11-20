@@ -6,7 +6,7 @@ require "header.php";
 
 <html>
 
-<div>
+<div style="width: 10%">
     <?php
     require "sidebar.html";
 
@@ -15,7 +15,7 @@ require "header.php";
 </div>
 
 <div>
-
+fájlkezelő
 </div>
 
 

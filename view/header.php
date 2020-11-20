@@ -1,3 +1,21 @@
+<?php
+
+
+session_start();
+/*/
+---
+Tesztek
+---
+$_SESSION['userlvl']=1;
+/*/
+
+if (session_status()==1) {
+
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,11 +54,29 @@ body {
 <body>
 
 <div class="topnav">
-  <a class="active" href="#home">Főoldal</a>
-  <a href="#user">felhasználó létrehozás</a>
-  <a href="#kezelés">Felhasználó kezelés</a>
-  <a href="#log">log kezelése</a>
-  <a href="#kat">kategóriák kezelése</a>
+    <a class="active" href="#home">Főoldal</a>
+    <?php
+    if ($_SESSION['userlvl']==2) {
+        ?>
+        <a href="#user">felhasználó létrehozás</a>
+        <a href="#kezelés">Felhasználó kezelés</a>
+        <a href="#log">log kezelése</a>
+        <a href="#kat">kategóriák kezelése</a>
+        <?php
+    }
+
+    ?>
+    <?php
+    if ($_SESSION['userlvl']==1) {
+        ?>
+        <a href="#kat">kategóriák kezelése</a>
+        <?php
+    }
+
+    ?>
+
+
+
 </div>
 
 <div style="padding-left:16px">
