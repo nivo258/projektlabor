@@ -6,8 +6,10 @@ session_start();
 ---
 Tesztek
 ---
-$_SESSION['userlvl']=1;
+$_SESSION['userlvl']=2;
 /*/
+$_SESSION['userlvl']=2;
+
 
 if (session_status()==1) {
 
@@ -28,12 +30,12 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #401b58;
 }
 
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -41,12 +43,12 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #401b58;
   color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #401b58;
   color: white;
 }
 </style>
@@ -54,11 +56,11 @@ body {
 <body>
 
 <div class="topnav">
-    <a class="active" href="#home">Főoldal</a>
+    <a class="active" href="main.php">Főoldal</a>
     <?php
     if ($_SESSION['userlvl']==2) {
         ?>
-        <a href="#user">felhasználó létrehozás</a>
+        <a href="reg.php">felhasználó létrehozás</a>
         <a href="#kezelés">Felhasználó kezelés</a>
         <a href="#log">log kezelése</a>
         <a href="#kat">kategóriák kezelése</a>
@@ -79,10 +81,6 @@ body {
 
 </div>
 
-<div style="padding-left:16px">
-  <h2>Menüsor</h2>
-  <p>projekt</p>
-</div>
 
 </body>
 </html>
