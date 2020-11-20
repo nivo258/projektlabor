@@ -30,3 +30,9 @@ class categorysDB extends db
     }
 
 }
+
+
+/*/
+---
+Tesztek
+---

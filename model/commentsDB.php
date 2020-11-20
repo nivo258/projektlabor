@@ -13,3 +13,8 @@ class commentsDB extends db
     }
 
 }
+
+/*/
+---
+Tesztek
+---

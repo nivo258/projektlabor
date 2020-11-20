@@ -13,3 +13,8 @@ class sharesDB extends db
     }
 
 }
+
+/*/
+---
+Tesztek
+---
