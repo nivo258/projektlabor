@@ -3,6 +3,17 @@ require "db.php";
 
 class usersDB extends db
 {
+    function getID($username) {
+        $result=0;
+        $asd = $this->select("SELECT `ID` FROM `users` WHERE `Username`= '".$username."'");
+
+        if (count($asd)==1) {
+            $result = $asd[0]['ID'];
+        }
+
+
+        return $result;
+    }
 
     function login($username,$pw) {
 
