@@ -61,9 +61,9 @@ body {
     if ($_SESSION['userlvl']==2) {
         ?>
         <a href="reg.php">felhasználó létrehozás</a>
-        <a href="#kezelés">Felhasználó kezelés</a>
-        <a href="#log">log kezelése</a>
-        <a href="#kat">kategóriák kezelése</a>
+        <a href="kezeles.php">Felhasználó kezelés</a>
+        <a href="log.php">log kezelése</a>
+        <a href="kat.php">kategóriák kezelése</a>
         <?php
     }
 

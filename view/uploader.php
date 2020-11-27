@@ -216,13 +216,13 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
   <style>
 .text:link, .text:visited {
     margin-left: 150px;
-    margin-top: 3px;
+	margin-top: 3px;
     background-color: #F5F5F5;
     color: black;
     border-style: solid;
     border-width:2px;
     border-radius: 15px 15px 15px 15px;
-    width:200px
+    width:210px;
 
 }
 a:link, a:visited {
@@ -235,7 +235,7 @@ a:link, a:visited {
 }
 </style>
     <?php if($allow_create_folder): ?>
-        <form action="?" method="post" id="mkdir" />
+        <form action="?" method="post" id="mkdir">
         <label for=dirname>Új mappa létrehozása</label><input id=dirname type=text name=name value="" />
         <input type="submit" value="létrehozás" />
         </form>

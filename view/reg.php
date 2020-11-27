@@ -8,15 +8,8 @@
    include 'header.php';
     ?>
 </div>
-
-
-<div style="width: 10%; margin-left: -10px">
-    <?php
-    include 'sidebar.html';
-    ?>
-</div>
-
 </head>
+
 <body>
     <div class="box">
       <div class="title">
