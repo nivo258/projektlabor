@@ -3,6 +3,14 @@ require "db.php";
 
 class usersDB extends db
 {
+    function getuserdata($id) {
+        $result = $this->select("SELECT * FROM `users` WHERE `ID` = .'".$id."' ;");
+
+        return $result;
+
+    }
+
+
     function getID($username) {
         $result=0;
         $asd = $this->select("SELECT `ID` FROM `users` WHERE `Username`= '".$username."'");
