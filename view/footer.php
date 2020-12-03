@@ -2,6 +2,10 @@
 <head>
 <style>
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   text-align: center;
   padding: 5px;
   background-color:rgb(255, 233, 198);

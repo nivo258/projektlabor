@@ -6,14 +6,10 @@
     ?>
 </div>
 
+<?php
+include_once('../controller/log.php');
+?>
 
-<div style="width: 10%; margin-left: -10px">
-    <?php
-    include 'sidebar.html';
-
-
-    ?>
-</div>
 
 <div>
 <?php
