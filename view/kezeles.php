@@ -22,7 +22,7 @@
   <tr>
     <td></td>
     <td></td>
-    <td ><button type="button" onclick="document.location='main.php'">Törlés</button> <button type="button" onclick="document.location='main.php'" style="right=550px ;">módosítás</button></td>
+    <td ><button type="button" onclick="document.location='modositas.php'">Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
 <style>
 #table {
 	width:80%;
