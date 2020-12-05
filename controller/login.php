@@ -1,7 +1,7 @@
 <?php
 require "../model/userDB.php";
 
-if (session_status () == PHP_SESSION_ NONE)
+if (session_status () == PHP_SESSION_NONE)
 {
 	session_start ();
 }
