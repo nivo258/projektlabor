@@ -1,6 +1,6 @@
 <html>
 
-<div style="margin-top: -20px;">
+<div style="margin-top: 0px;">
     <?php
    include 'header.php';
     ?>
@@ -10,8 +10,6 @@
 <div style="width: 10%; margin-left: -10px">
     <?php
     include 'sidebar.html';
-
-
     ?>
 </div>
 
@@ -20,6 +18,8 @@
     include 'uploader.php';
     ?>
 </div>
+
+
 
 <div>
 <?php

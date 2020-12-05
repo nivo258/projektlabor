@@ -17,7 +17,7 @@ footer {
 <body>
 <footer>
   <p>Készítette: Mestyán Zsófia, Novodonszki Zsolt, Máté Ferenc<br>
-  <h1 href="mailto:dimplomaKozpont@gmail.com">dimplomaKozpont@gmail.com</h1></p>
+  <h1 href="mailto:diplomaKozpont@gmail.com">diplomaKozpont@gmail.com</h1></p>
 </footer>
 </body>
 </html>

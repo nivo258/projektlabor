@@ -10,6 +10,48 @@
 include_once('../controller/log.php');
 ?>
 
+<div style="width: 10%; margin-left: -10px">
+    <?php
+    include 'sidebar.html';
+    ?>
+</div>
+
+<table id="table"><thead><tr>
+    <th>ID</th>
+	<th>Neptunkód</th>
+	<th>Felhasználó Szintje</th>
+    </thead>
+    <tbody>
+  <tr>
+    <td>01</td>
+    <td>felhaszáló1</td>
+    <td>teszt1</td>
+
+<style>
+#table {
+	width:80%;
+	border:2px solid black;
+    margin-top: 50px;
+    margin-left: 250px;
+  background-color: white;
+}
+td {
+    border:2px solid black;
+    text-align: center;
+}
+button {
+    background-color:#401b58;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 12px;
+}
+</style>
+</tbody></table>
 
 <div>
 <?php
