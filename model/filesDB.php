@@ -34,6 +34,9 @@ class filesDB extends db
         $this->log($ID."-es fájl modosításra került");
 
     }
+    function getfiledata($ID) {
+        $this->select("SELECT *  FROM `files` WHERE `files`.`ID` = ".$ID.";");
+    }
     function listallfiles() {
         $result = $this->select("SELECT * FROM `files`;");
         return $result;
