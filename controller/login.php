@@ -1,5 +1,5 @@
 <?php
-require "../model/userDB.php";
+require "../model/usersDB.php";
 
 if (session_status () == PHP_SESSION_NONE)
 {

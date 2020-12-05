@@ -5,14 +5,14 @@ if (session_status () == PHP_SESSION_NONE)
 {
 	session_start ();
 }
-if($_SERVER['REQEST_METHOD'] == 'POST')
+if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	$username = filter_input(INPUt_POST, 'username');
-	$password = filter_input( INPUt_POST,  'password');
-	$remember_me = filter_input( INPUt_POST,  'remember-me');
+	$username = filter_input(INPUT_POST, 'username');
+	$password = filter_input( INPUT_POST,  'password');
+	$remember_me = filter_input( INPUT_POST,  'remember-me');
 }
 
-$asd = new userDB();
+$asd = new usersDB();
 
 $res = $asd-> login($username, $password);
 
@@ -21,12 +21,12 @@ if($res[0]['code']== 200)
 	$_SESSION['userlvl'] = $asd->getLVL($username);
 	$_SESSION['user_logged_in']= TRUE;
 	$_SESSION['username'] = $username;
-	header('Localation.../view/index.html');
+	header('Location../view/main.php');
 }
 
 else 
 {
 	$_SESSION['login_failure'] = "Hibás felhasználónév vagy jelszó";
-	header('Localation.../view/index.html');
+	header('Location../view/index.php');
 }
  ?>
