@@ -7,7 +7,7 @@ if (session_status () == PHP_SESSION_NONE)
 }
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-	$username = filter_input(INPUT_POST, 'username');
+	$username = filter_input(INPUT_POST, 'neptun');
 	$password = filter_input( INPUT_POST,  'password');
 	$remember_me = filter_input( INPUT_POST,  'remember-me');
 }
