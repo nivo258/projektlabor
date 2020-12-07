@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/upoader.css">
+<link rel="stylesheet">
 <style>
 
 .button{
@@ -32,7 +32,7 @@
 .form-popup {
   display: none;
   position:absolute;
-  top: 20%;
+  top: 12%;
   left: 45%;
   border: 3px solid #401b58;
   z-index: 9;
@@ -40,8 +40,8 @@
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 350px;
+  padding: 20px;
   background-color: white;
 }
 
@@ -68,7 +68,7 @@
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
 
@@ -87,16 +87,26 @@
 	</p>
 
 	<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Feltöltés</h1>
+  <form class="form-container">
+    <h1>Új elem feltöltése</h1>
 
-    <label for="email"><b>Neve</b></label>
+    <label for="name"><b>Neve</b></label>
 	<input type="text" placeholder="Ird be a fájl nevét" name="file" required>
+    
+    <label for="tipe"><b>Leírás:</b></label>
+    <input type="tipus" placeholder="A fájl leírása" name="type" required>
+    <input type="checkbox" checked="checked" style="height:25px; width:25px;"> Publikus
+    <span class="checkmark"></span>
 
-    <label for="psw"><b>Tipusa</b></label>
-    <input type="tipus" placeholder="Add meg a fájl típusát" name="type" required>
-
-    <button type="submit" class="btn">Feltöltés</button>
+    <label style="margin-left:13px;" for="cars">Kategória:</label>
+  <select>
+    <option value="0">Segédanyag</option>
+    <option value="1">Tananyag</option>
+    <option value="2">Extra</option>
+  </select>
+  
+    <button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
+    <button type="button" onclick=window.alert("Sikeresen_feltöltve") class="btn">Feltöltés</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Bezár</button>
   </form>
 </div>
@@ -114,7 +124,10 @@
 	<td></td>
 	<td></td>
 	<td></td>
-    <td ><button type="button" onclick=window.alert("Törölve")>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
+  <td >
+      <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
+      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+  </td>
 
  
 
