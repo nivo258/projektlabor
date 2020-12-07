@@ -22,7 +22,7 @@
   <tr>
     <td></td>
     <td></td>
-    <td ><button type="button" onclick="document.location='modositas.php'">Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
+    <td ><button type="button" onclick=window.alert("Törölve");>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
 
     <?php
     //include_once(../controller/listusers.php)

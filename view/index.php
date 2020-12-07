@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION['user_logged_in']) == TRUE ) {
+    header('Location:../view/main.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

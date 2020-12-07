@@ -13,7 +13,7 @@
 <body>
     <div class="box">
       <div class="title">
-Regisztráció</div>
+Módosítás</div>
     <form>
         <div class="field">
           <input type="text" required placeholder="Neptun kód">
