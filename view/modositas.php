@@ -22,14 +22,7 @@ Módosítás</div>
           <input type="password" required placeholder="Jelszó">
         </div>
 
-<div class="field">
-    <select class="select" name="userlvl" id="userlvl">
-        <option value="def" disabled selected>Felhasználó szintje</option>
-        <option value="spec">Hallgató</option>
-        <option value="user">Oktató</option>
-        <option value="admin">Admin</option>
-    </select>
-        </div>
+        <br>
         <button type="submit" class="btn" value="Submit" onclick="return Validate()" >Módosítás</button>
 
     </form>

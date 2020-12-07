@@ -103,9 +103,9 @@
     <option value="0">Segédanyag</option>
     <option value="1">Tananyag</option>
     <option value="2">Extra</option>
-  </select>
+  </select><br>
   
-    <button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
+  <br><button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
     <button type="button" onclick=window.alert("Sikeresen_feltöltve") class="btn">Feltöltés</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Bezár</button>
   </form>
