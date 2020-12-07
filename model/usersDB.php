@@ -3,6 +3,16 @@ require "db.php";
 
 class usersDB extends db
 {
+    function getLVL($username)
+    {
+        $result = 0;
+        $asd = $this->select("SELECT `Userlvl` FROM `users` WHERE `Username`= '" . $username . "'");
+
+        if (count($asd) == 1) {
+            $result = $asd[0]['Userlvl'];
+        }
+    }
+
     function getuserdata($id) {
         $result = $this->select("SELECT * FROM `users` WHERE `ID` = .'".$id."' ;");
 
