@@ -18,15 +18,14 @@ $res = $asd-> login($username, $password);
 
 if($res[0]['code']== 200)
 {
-	$_SESSION['userlvl'] = $asd->getLVL($username);
 	$_SESSION['user_logged_in']= TRUE;
 	$_SESSION['username'] = $username;
-	header('Location:../view/main.php');
+	header('Location: ../view/main.php');
 }
 
 else 
 {
 	$_SESSION['login_failure'] = "Hibás felhasználónév vagy jelszó";
-	header('Location:../view/index.php');
+	header('Location: ../view/index.php');
 }
  ?>
