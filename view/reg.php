@@ -19,7 +19,7 @@ Regisztráció</div>
           <input type="text" required placeholder="Neptun kód">
         </div>
 <div class="field">
-          <input type="password" required placeholder="Jelszó">
+          <input type="psw" required placeholder="Jelszó">
         </div>
 
 <div class="field">
@@ -30,7 +30,7 @@ Regisztráció</div>
         <option value="admin">Admin</option>
     </select>
         </div>
-        <button type="submit" class="btn" value="Submit" onclick="return Validate()" >Regisztrálás</button>
+        <button type="submit" class="btn" value="submit" onclick="return Validate()" >Regisztrálás</button>
 
     </form>
         </div>

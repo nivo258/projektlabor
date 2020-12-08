@@ -19,7 +19,12 @@ Módosítás</div>
           <input type="text" required placeholder="Neptun kód">
         </div>
 <div class="field">
-          <input type="password" required placeholder="Jelszó">
+    <select class="select" name="userlvl" id="userlvl">
+        <option value="def" disabled selected>Felhasználó szintje</option>
+        <option value="spec">Nézelödő</option>
+        <option value="user">Felhasználó</option>
+        <option value="admin">Admin</option>
+    </select>
         </div>
 
         <br>

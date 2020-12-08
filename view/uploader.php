@@ -132,6 +132,17 @@
  
 
 <style>
+  button {
+    background-color:#401b58;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+}
 #table {
 	width:100%;
 	border:2px solid black;
