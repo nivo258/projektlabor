@@ -22,10 +22,32 @@ include_once('../controller/log.php');
 	<th>Felhasználó Szintje</th>
     </thead>
     <tbody>
+    <tr>
+    <td>05</td>
+    <td> - </td>
+    <td>Admin</td>
+  </tr>
   <tr>
     <td>01</td>
-    <td>felhaszáló1</td>
-    <td>teszt1</td>
+    <td>UWL4JU</td>
+    <td>Hallgató</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>ZHX4U5</td>
+    <td>Hallgató</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td> - </td>
+    <td>Vendég</td>
+  </tr>
+  <tr>
+    <td>04</td>
+    <td>A3LU4X</td>
+    <td>Hallgató</td>
+  </tr>
+ 
 
 <style>
 #table {

@@ -113,23 +113,53 @@
 
 <table id="table"><thead><tr>
 	<th>ID</th>
-	<th>Neptun kód</th>
+	<th>Fájl neve</th>
+  <th>Neptun kód</th> 
 	<th>Utolsó modosítás</th>
 	<th>Méret</th>
 	<th>Műveletek</th>
     </thead>
     <tbody>
   <tr>
-    <td></td>
-	<td></td>
-	<td></td>
-	<td></td>
+    <td>1</td>
+	<td>Beadandó.pdf</td>
+  <td>UWL4JU</td>
+	<td>2020.12.08.</td>
+	<td>178 KB</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
       <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
   </td>
-
- 
+  <tr>
+    <td>2</td>
+	<td>codes.php</td>
+  <td>ZHX4U5</td>
+	<td>2020.11.25.</td>
+	<td>5 KB</td>
+  <td >
+      <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
+      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+  </td>
+  <tr>
+    <td>3</td>
+	<td>szerk.txt</td>
+  <td>A3LU4X</td>
+	<td>2020.12.01.</td>
+	<td>1 KB</td>
+  <td >
+      <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
+      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+  </td>
+  <tr>
+    <td>4</td>
+	<td>file.png</td>
+  <td>UWL4JU</td>
+	<td>2020.12.09.</td>
+	<td>315 B</td>
+  <td >
+      <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
+      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+  </td>
 
 <style>
   button {
