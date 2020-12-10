@@ -16,38 +16,7 @@ include_once('../controller/log.php');
     ?>
 </div>
 
-<table id="table"><thead><tr>
-    <th>ID</th>
-	<th>Neptunkód</th>
-	<th>Felhasználó Szintje</th>
-    </thead>
-    <tbody>
-    <tr>
-    <td>05</td>
-    <td> - </td>
-    <td>Admin</td>
-  </tr>
-  <tr>
-    <td>01</td>
-    <td>UWL4JU</td>
-    <td>Hallgató</td>
-  </tr>
-  <tr>
-    <td>02</td>
-    <td>ZHX4U5</td>
-    <td>Hallgató</td>
-  </tr>
-  <tr>
-    <td>03</td>
-    <td> - </td>
-    <td>Vendég</td>
-  </tr>
-  <tr>
-    <td>04</td>
-    <td>A3LU4X</td>
-    <td>Hallgató</td>
-  </tr>
- 
+
 
 <style>
 #table {
@@ -56,6 +25,7 @@ include_once('../controller/log.php');
     margin-top: 50px;
     margin-left: 250px;
   background-color: white;
+    margin-bottom: 200px;
 }
 td {
     border:2px solid black;
@@ -73,7 +43,7 @@ button {
   border-radius: 12px;
 }
 </style>
-</tbody></table>
+</tbody>
 
 <div>
 <?php

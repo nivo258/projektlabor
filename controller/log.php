@@ -11,11 +11,16 @@ $res = $asd->listlog();
 
 ?>
 
+<html>
+<header>
+    <meta charset="ISO-8859-1">
+</header>
+
 <table id="table">
     <tr>
         <th>ID</th>
-        <th>Dátum</th>
-        <th>Leírás</th>
+        <th>Datum</th>
+        <th>Leiras</th>
 
     </tr>
     <?php
@@ -33,3 +38,5 @@ $res = $asd->listlog();
     }
     ?>
 </table>
+
+</html>
