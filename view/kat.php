@@ -80,74 +80,10 @@
 </head>
 <body>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px;">
-
-  <input type="text" style="margin-left:5px;margin-top:5px;" placeholder="Search.." name="search">
-      <button type="submit" style="margin-left:5px;margin-top:5px;"><i class="fa fa-search"></i></button>
-  <h3 class="w3-bar-item">Szűrés: <button type="submit">Keresés</i></button><br></h3>
-  <a style="margin-left:5px;"> Fájl Tipus szerint</a>
-  <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> szövegszerkeztő
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> PDF
-    <span class="checkmark"></span><br>
-   
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Powerpoint
-    <span class="checkmark"></span><br>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> táblázatkezelő
-    <span class="checkmark"></span><br>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Kép(jpg,png)
-    <span class="checkmark"></span><br>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Egyéb
-    <span class="checkmark"></span><br>
-
-    <h3 class="w3-bar-item">Rendezés:</h3>
-
-  <a style="margin-left:5px;"> Módosítás dátuma szerint</a>
-
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span>
-<br>
-  <a style="margin-left:5px;">Név szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-    <a style="margin-left:5px;">ID szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-    <a style="margin-left:5px;">Neptun kód szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span><br>
-
-    <a style="margin-left:5px;">Méret szerint</a>
-    <br>
-  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
-    <span class="checkmark"></span>
-
-    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
-    <span class="checkmark"></span>
-<br><br><br><br><br>
+<div >
+    <?php
+    include 'sidebar.html';
+    ?>
 </div>
 
 <!-- Hozzáadás PopUp -->

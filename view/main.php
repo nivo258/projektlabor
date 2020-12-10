@@ -7,7 +7,7 @@
 </div>
 
 
-<div style="width: 10%; margin-left: -10px">
+<div >
     <?php
     include 'sidebar.html';
     ?>

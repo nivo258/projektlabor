@@ -111,13 +111,13 @@
   </form>
 </div>
 
-<table id="table"><thead><tr>
-	<th>ID</th>
-	<th>Fájl neve</th>
-  <th>Neptun kód</th> 
-	<th>Utolsó modosítás</th>
-	<th>Méret</th>
-	<th>Műveletek</th>
+<table style="margin-left:250px;" id="table"><thead><tr>
+	<th style="width:50px;">ID</th>
+	<th style="width:250px;">Fájl neve</th>
+  <th style="width:150px;">Neptun kód</th> 
+	<th style="width:180x;">Utolsó modosítás</th>
+	<th style="width:150px;">Méret</th>
+	<th style="width:350px;">Műveletek</th>
     </thead>
     <tbody>
   <tr>
@@ -174,7 +174,7 @@
   border-radius: 8px;
 }
 #table {
-	width:100%;
+	width:60%;
 	border:2px solid black;
     margin-top: 50px;
     margin-left:20px;
