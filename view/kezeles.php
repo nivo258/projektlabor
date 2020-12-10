@@ -1,4 +1,7 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div style="margin-top: 0px;">
     <?php
@@ -7,32 +10,86 @@
 </div>
 
 
-<div style="width: 10%; margin-left: -10px">
-    <?php
-    include 'sidebar.html';
-    ?>
+<!-- Sidebar -->
+<div style="width:200px;" class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px;">
+
+  <input type="text" style="margin-left:10px;margin-top:5px;" placeholder="Keresés.." name="search">
+      <button type="submit" style="margin-left:5px;margin-top:5px;"><i class="fa fa-search"></i></button>
+  
+ 
+
+      <h3 class="w3-bar-item">Rendezés:</h3>
+
+<br>
+  <a style="margin-left:5px;">ID szerint</a>
+    <br>
+  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
+    <span class="checkmark"></span>
+
+    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
+    <span class="checkmark"></span><br>
+
+    <a style="margin-left:5px;">Neptun kód szerint</a>
+    <br>
+  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
+    <span class="checkmark"></span>
+
+    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
+    <span class="checkmark"></span><br>
+
+    <a style="margin-left:5px;">Felhasználó szintje szerint</a>
+    <br>
+  <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Növekvő sorrend
+    <span class="checkmark"></span>
+
+    <input type="checkbox" style="height:15px; width:15px; margin-left:50px;"> Csökkenő sorrend
+    <span class="checkmark"></span><br>
+
+   <button type="submit">Keresés</i></button><br></h3>
+<br><br><br><br><br>
 </div>
 
+
+<!-- Táblázat -->
+
 <table id="table"><thead><tr>
+  <th>ID</th>
 	<th>Neptunkód</th>
 	<th>Felhasználó Szintje</th>
 	<th>módosítás</th>
     </thead>
     <tbody>
   <tr>
-    <td></td>
-    <td></td>
+    <td>1</td>
+    <td>Admin</td>
+    <td>Admin</td>
     <td ><button type="button" onclick=window.alert("Törölve");>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
-
+    <tbody>
+  <tr>
+    <td>2</td>
+    <td>UWL4JU</td>
+    <td>hallgató</td>
+    <td ><button type="button" onclick=window.alert("Törölve");>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
+    <tr>
+    <td>2</td>
+    <td>ZHX4U5</td>
+    <td>hallgató</td>
+    <td ><button type="button" onclick=window.alert("Törölve");>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
+    <tr>
+    <td>2</td>
+    <td>A3LU4X</td>
+    <td>hallgató</td>
+    <td ><button type="button" onclick=window.alert("Törölve");>Törlés</button> <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button></td>
+ 
     <?php
     //include_once(../controller/listusers.php)
     ?>
 <style>
 #table {
-	width:80%;
+	width:70%;
 	border:2px solid black;
     margin-top: 50px;
-    margin-left: 250px;
+    margin-left: 25%;
   background-color: white;
 }
 td {

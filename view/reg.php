@@ -25,9 +25,9 @@ Regisztráció</div>
 <div class="field">
     <select class="select" name="userlvl" id="userlvl">
         <option value="def" disabled selected>Felhasználó szintje</option>
-        <option value="spec">Nézelödő</option>
-        <option value="user">Felhasználó</option>
         <option value="admin">Admin</option>
+        <option value="user">Oktató</option>
+        <option value="spec">Hallgató</option>
     </select>
         </div>
         <button type="submit" class="btn" value="submit" onclick="return Validate()" >Regisztrálás</button>

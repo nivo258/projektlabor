@@ -80,11 +80,7 @@
 </head>
 <body>
 
-<div >
-    <?php
-    include 'sidebar.html';
-    ?>
-</div>
+
 
 <!-- Hozzáadás PopUp -->
 
@@ -98,20 +94,13 @@
   <form class="form-container">
     <h1>Új elem feltöltése</h1>
 
-    <label for="name"><b>Neve</b></label>
+    <label for="name"><b>Kategória neve:</b></label>
 	<input type="text" placeholder="Ird be a fájl nevét" name="file" required>
     
-    <label for="tipe"><b>Leírás:</b></label>
+    <label for="tipe"><b>Leírása:</b></label>
     <input type="tipus" placeholder="A fájl leírása" name="type" required>
-    <input type="checkbox" checked="checked" style="height:25px; width:25px;"> Publikus
-    <span class="checkmark"></span>
 
-    <label style="margin-left:13px;" for="cars">Kategória:</label>
-  <select>
-    <option value="0">Segédanyag</option>
-    <option value="1">Tananyag</option>
-    <option value="2">Extra</option>
-  </select><br>
+
   
   <br><button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
     <button type="button" onclick=window.alert("Sikeresen_feltöltve") class="btn">Feltöltés</button>
@@ -126,52 +115,42 @@
 
 <table id="table"><thead><tr>
 	<th style="width: 50px;">ID</th>
-	<th style="width: 200px;">Fájl neve</th>
-  <th style="width: 120px;">Neptun kód</th> 
-	<th style="width: 180px;" >Utolsó modosítás</th>
-	<th style="width: 150px;">Méret</th>
+	<th style="width: 200px;">Kategória neve</th>
+  <th style="width: 120px;">Leírása</th> 
 	<th style="width: 350px;">Műveletek</th>
     </thead>
     <tbody>
   <tr>
     <td>1</td>
-	<td>Beadandó.pdf</td>
-  <td>UWL4JU</td>
-	<td>2020.12.08.</td>
-	<td>178 KB</td>
+	<td>Deafault</td>
+  <td>alapértelmezett kategória. Nem törölhető!</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='katmod.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
-    <td>2</td>
-	<td>codes.php</td>
-  <td>ZHX4U5</td>
-	<td>2020.11.25.</td>
-	<td>5 KB</td>
+  <td>2</td>
+	<td>Gazdasági</td>
+  <td>Gazdaságtudományi karos hallgatók számára</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='katmod.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
-    <td>3</td>
-	<td>szerk.txt</td>
-  <td>A3LU4X</td>
-	<td>2020.12.01.</td>
-	<td>1 KB</td>
+  <td>3</td>
+	<td>Mérnöki</td>
+  <td>Mérnöki karos hallgatók számára</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='katmod.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
-    <td>4</td>
-	<td>file.png</td>
-  <td>UWL4JU</td>
-	<td>2020.12.09.</td>
-	<td>315 B</td>
+  <td>3</td>
+	<td>Informatika</td>
+  <td>Műszaki Informatikai karos hallgatók számára</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='katmod.php'" style="right=550px ;">módosítás</button>
   </td>
 
 <style>
@@ -187,10 +166,10 @@ button {
   border-radius: 8px;
 }
 #table {
-	width:60%;
+	width:90%;
 	border:2px solid black;
     margin-top: 50px;
-    margin-left: 400px;
+    margin-left: 5%;
   background-color: white;
 }
 td {
