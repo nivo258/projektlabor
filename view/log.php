@@ -5,11 +5,11 @@
    include 'header.php';
     ?>
 </div>
-
+<center>
 <?php
 include_once('../controller/log.php');
 ?>
-
+</center>
 <div style="width: 10%; margin-left: -10px">
     <?php
     include 'sidebar.html';
@@ -23,7 +23,6 @@ include_once('../controller/log.php');
 	width:80%;
 	border:2px solid black;
     margin-top: 50px;
-    margin-left: 250px;
   background-color: white;
     margin-bottom: 200px;
 }
