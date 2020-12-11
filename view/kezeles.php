@@ -11,11 +11,7 @@
 
 
 <!-- Sidebar -->
-<<<<<<< HEAD
-<div style="width:220px;" class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px;">
-=======
 <div style="width:250px;" class="w3-sidebar w3-light-grey w3-bar-block" style="width:250px;">
->>>>>>> 26ebce8e367c1fcf16c7c365ba5703513d194b16
 
   <input type="text" style="margin-left:10px;margin-top:5px;" placeholder="Keresés.." name="search">
       <button type="submit" style="margin-left:5px;margin-top:5px;"><i class="fa fa-search"></i></button>
