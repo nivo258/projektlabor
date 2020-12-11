@@ -95,14 +95,14 @@
     <h1>Új elem feltöltése</h1>
 
     <label for="name"><b>Kategória neve:</b></label>
-	<input type="text" placeholder="Ird be a fájl nevét" name="file" required>
+	<input type="text" placeholder="Ird be a kategória nevét" name="file" required>
     
     <label for="tipe"><b>Leírása:</b></label>
-    <input type="tipus" placeholder="A fájl leírása" name="type" required>
+    <input type="tipus" placeholder="A kategória leírása" name="type" required>
 
 
   
-  <br><button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
+  <br><button type="button" class="btn"  Style="background-color:Blue;">Új kategória Hozzáadása</button>
     <button type="button" onclick=window.alert("Sikeresen_feltöltve") class="btn">Feltöltés</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Bezár</button>
   </form>

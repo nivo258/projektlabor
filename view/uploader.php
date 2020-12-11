@@ -100,9 +100,10 @@
 
     <label style="margin-left:13px;" for="cars">Kategória:</label>
   <select>
-    <option value="0">Segédanyag</option>
-    <option value="1">Tananyag</option>
-    <option value="2">Extra</option>
+    <option value="0">Gazdasági</option>
+    <option value="1">Informatikai</option>
+    <option value="2">Mérnöki</option>
+    <option value="2">Default</option>
   </select><br>
   
   <br><button type="button" class="btn"  Style="background-color:Blue;">Új Fájl Hozzáadása</button>
@@ -111,10 +112,12 @@
   </form>
 </div>
 
-<table style="margin-left:250px;" id="table"><thead><tr>
+<table style="margin-left:10%;" id="table"><thead><tr>
 	<th style="width:50px;">ID</th>
 	<th style="width:250px;">Fájl neve</th>
   <th style="width:150px;">Neptun kód</th> 
+  <th style="width:150px;">Kategória</th> 
+  <th style="width:500px;">Leírás</th> 
 	<th style="width:180x;">Utolsó modosítás</th>
 	<th style="width:150px;">Méret</th>
 	<th style="width:350px;">Műveletek</th>
@@ -124,41 +127,49 @@
     <td>1</td>
 	<td>Beadandó.pdf</td>
   <td>UWL4JU</td>
+  <td>Gazdasági</td>
+  <td>Gazdaságtudományi szakos hallgatók számára</td>
 	<td>2020.12.08.</td>
 	<td>178 KB</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='modositmain.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
     <td>2</td>
 	<td>codes.php</td>
   <td>ZHX4U5</td>
+  <td>Informatikai</td>
+  <td>Informatikai szakos hallgatók számára</td>
 	<td>2020.11.25.</td>
 	<td>5 KB</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='modositmain.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
     <td>3</td>
 	<td>szerk.txt</td>
   <td>A3LU4X</td>
+  <td>Mérnöki</td>
+  <td>Mérnöki szakos hallgatók számára</td>
 	<td>2020.12.01.</td>
 	<td>1 KB</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='modositmain.php'" style="right=550px ;">módosítás</button>
   </td>
   <tr>
     <td>4</td>
 	<td>file.png</td>
   <td>UWL4JU</td>
+  <td>Gazdasági</td>
+  <td>Gazdaságtudományi szakos hallgatók számára</td>
 	<td>2020.12.09.</td>
 	<td>315 B</td>
   <td >
       <button type="button" onclick=window.alert("Törölve")>Törlés</button> 
-      <button type="button" onclick="document.location='modositas.php'" style="right=550px ;">módosítás</button>
+      <button type="button" onclick="document.location='modositmain.php'" style="right=550px ;">módosítás</button>
   </td>
 
 <style>
@@ -174,10 +185,9 @@
   border-radius: 8px;
 }
 #table {
-	width:60%;
+	width:90%;
 	border:2px solid black;
     margin-top: 50px;
-    margin-left:20px;
   background-color: white;
 }
 td {
